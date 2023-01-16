@@ -2,6 +2,6 @@
 
 function palindrome(str){
 	const revString = str.split('').reverse().join('');
-	return revString === str;
+	return revString === str ? true : false;
 }
 module.exports = palindrome

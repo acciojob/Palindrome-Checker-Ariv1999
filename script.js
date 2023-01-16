@@ -4,4 +4,4 @@ function palindrome(str){
 	const revString = str.split('').reverse().join('');
 	return revString === str ? true : false;
 }
-module.exports = palindrome
+module.exports = palindrome('maam');

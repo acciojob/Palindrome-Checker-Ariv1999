@@ -2,13 +2,13 @@
 const text = document.getElementById('text');
 const buttom = document.getElementById('check');
 const outPut = document.getElementById('outPut');
-const str = text.value;
-buttom.setEventListener('click', palindrome);
-function palindrome(str){
+buttom.addEventListener('click', palindrome);
+function palindrome(){
+	const str = text.value;
 	const revString = str.split('').reverse().join('');
 	if(revString === str){
-		outPut.innerText = 'true';
+		outPut.innerHTML = 'true';
 	}else{
-		outPut.innerText = 'false';
+		outPut.innerHTML = 'false';
 	}
 }
